@@ -339,7 +339,6 @@ return [
         'Ritesh_CustomerApi' => 1,
         'Ritesh_New' => 1,
         'Ritesh_UiCompo' => 1,
-        'Sigma_CustomPaymentMethod' => 0,
         'Temando_ShippingRemover' => 1,
         'WebShopApps_MatrixRate' => 1
     ]
