@@ -66,8 +66,17 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
 
         $method->setPrice($amount);
         $method->setCost($amount);
-
-        $result->append($method);
+        $writer = new \Zend_Log_Writer_Stream(BP . '/var/log/custom.log');
+        $logger = new \Zend_Log();
+        $logger->addWriter($writer);
+        $logger->info($method->getMethod());
+        if ($method->getMethod() == 'samedayship') { // validate method
+            if ($request->getDestCity() == 'Bangalore') { // validate city
+                $result->append($method);
+            }
+        } else {
+            $result->append($method);
+        }
 
         return $result;
     }

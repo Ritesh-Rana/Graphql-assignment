@@ -56,6 +56,10 @@
                         <label>Enable</label>
                         <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     </field>
+                    <field id="city" translate="label comment" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Citys</label>
+                        <source_model>GqRitesh\Assignment\Model\Config\Source\CityOptions</source_model>
+                    </field>
                 </group>
         </section>
     </system>
