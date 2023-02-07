@@ -10,7 +10,7 @@ return [
         'consumers_wait_for_messages' => 1
     ],
     'crypt' => [
-        'key' => '483c5024b595d6e0e534d859a0c3287b'
+        'key' => '74782f3f6851923a9c5cc1639ee20714'
     ],
     'db' => [
         'table_prefix' => '',
@@ -36,7 +36,7 @@ return [
         ]
     ],
     'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'developer',
+    'MAGE_MODE' => 'default',
     'session' => [
         'save' => 'files'
     ],
@@ -54,7 +54,7 @@ return [
     'lock' => [
         'provider' => 'db',
         'config' => [
-            'prefix' => null
+            'prefix' => ''
         ]
     ],
     'directories' => [
@@ -76,7 +76,10 @@ return [
         'config_webservice' => 1,
         'translate' => 1
     ],
+    'downloadable_domains' => [
+
+    ],
     'install' => [
-        'date' => 'Mon, 23 Jan 2023 08:12:05 +0000'
+        'date' => 'Tue, 07 Feb 2023 10:17:17 +0000'
     ]
 ];

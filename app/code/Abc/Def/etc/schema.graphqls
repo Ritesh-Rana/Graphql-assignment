@@ -14,6 +14,12 @@ type Query {
         sku: String! @doc(description: "Pass Sku of the product")
         unit: String! @doc(description: " Change the unit of measure with this unit ")
     ): EditProductAttributesOutput @resolver(class: "Abc\\Def\\Model\\Resolver\\EditProductAttributes") @doc(description: "some stuf ")
+
+    editProductComment(
+        id: Int! @doc(description: "Id or Order number")
+        sku: String! @doc(description: "Pass Sku of the product for which have to update Comment")
+        comment: String! @doc(description: "Provide comment for update")
+    ): EditProductCommentOutput @resolver(class: "Abc\\Def\\Model\\Resolver\\EditProductComment") @doc(description: "some stuf ")
 }
 
 type EditCommentsAttributesOutput @doc(description: "Update Comments Attributes By Order Number Or Id") {
@@ -32,3 +38,10 @@ type EditProductAttributesOutput @doc(description: "Update Product Attributes By
     updatedUnit: String @doc(description: "Updated Unit of product")
     flag: String @doc(description: "Flag is updated or not")
 }
+
+type EditProductCommentOutput @doc(description: "Update Product comment By Product order Id and SKU") {
+    sku: String @doc(description: "Product SKU ")
+    updatedComment: String @doc(description: "Updated comment of product")
+    flag: String @doc(description: "Flag is updated or not")
+}
+

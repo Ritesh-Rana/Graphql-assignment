@@ -25,7 +25,6 @@ class EditCommentsAttributes implements ResolverInterface
         $orderObj = $objectManager->create(\Magento\Sales\Model\OrderFactory::class)->create()->load($orderId);
 
         $quoteId = $orderObj->getQuoteId();
-        echo $quoteId;
         $qouteObj = $objectManager->create(\Magento\Quote\Model\QuoteFactory::class)->create()->load($quoteId);
 
         if($quoteId){
