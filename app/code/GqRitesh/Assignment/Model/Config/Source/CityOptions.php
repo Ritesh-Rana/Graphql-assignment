@@ -13,7 +13,7 @@ class CityOptions extends AbstractSource{
             $this->_options=[
                                 ['label' => __('Bangalore'), 'value' => 'Bangalore'],
                                 ['label' => __('Indore'), 'value' =>'Indore' ],
-                                ['label' => __('Jaipure'), 'value' =>'Jaipure' ],
+                                ['label' => __('Jaipure'), 'value' =>'Jaipur' ],
                                 ['label' => __('Jodhpur'), 'value' =>'Jodhpur' ]
                             ];
         }
